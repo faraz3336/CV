@@ -1,0 +1,127 @@
+/* ========== Global Reset & Font ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ========== Body Styling ========== */
+body {
+    background: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* ========== Main Resume Wrapper ========== */
+.resume {
+    display: flex;
+    width: 900px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== Sidebar Section ========== */
+.sidebar {
+    width: 30%;
+    background: #1e3a8a;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* Name & Job Title */
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.job-title {
+    font-size: 14px;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+/* Headings inside Sidebar */
+.sidebar h3 {
+    font-size: 16px;
+    text-align: left;
+    margin: 20px 0 10px;
+    border-bottom: 1px solid #374151;
+    padding-bottom: 5px;
+}
+
+/* Contact Info & Skills */
+.contact-info p,
+.skills li {
+    font-size: 14px;
+    margin: 8px 0;
+    text-align: left;
+}
+
+.contact-info i {
+    margin-right: 8px;
+    color: #ddd;
+}
+
+/* ========== Main Content Section ========== */
+.main-content {
+    width: 70%;
+    padding: 30px;
+}
+
+.main-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 5px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+ul {
+    margin-left: 20px;
+    line-height: 1.6;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* ========== Responsive (Mobile View) ========== */
+@media (max-width: 768px) {
+    .resume {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sidebar, 
+    .main-content {
+        width: 100%;
+        text-align: left;
+    }
+
+    /* Keep top profile area centered but make text content aligned left */
+    .sidebar {
+        text-align: center;
+    }
+}
